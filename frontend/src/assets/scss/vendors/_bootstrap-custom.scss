@@ -1,0 +1,54 @@
+@import 'bootswatch/dist/flatly/bootswatch';
+@import './bootstrap-darkmode.scss';
+
+.navbar {
+  font-size: $font-size-sm;
+  font-weight: 500;
+  box-shadow: 0 0 15px rgba(0,0,0, .2);
+
+  .nav-item {
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      border-radius: $border-radius;
+    }
+  }
+}
+.navbar-dark {
+  .navbar-nav {
+    .nav-link {
+      &:hover {
+        background-color: rgba(255, 255, 255, .06);
+      }
+
+      &.active {
+        background-color: rgba(0, 0, 0, .5);
+      }
+    }
+  }
+}
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      &:hover {
+        background-color: rgba(0, 0, 0, .03);
+      }
+
+      &.active {
+        background-color: rgba(0, 0, 0, .05);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .nav-tabs {
+    .nav-link {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}

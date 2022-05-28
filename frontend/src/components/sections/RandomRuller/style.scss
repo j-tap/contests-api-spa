@@ -1,0 +1,72 @@
+.random-ruller {
+  &__code-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    font-size: 60px;
+  }
+
+  &__code {
+    position: relative;
+    width: 110px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 250ms ease-in, text-shadow 250ms ease-in;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto; 
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 5px solid rgb(255 255 255 / 5%);
+      box-shadow: 0 0 20px rgb(255 255 255 / 5%), 0 0 20px rgb(255 255 255 / 5%) inset;
+      opacity: 0;
+    }
+
+    &-prewinner {
+      transform: scale(1.4);
+      text-shadow: 0 0 6px rgb(255 255 255 / 50%);
+
+      &::before {
+        animation: pulse 500ms 100ms ease-in;
+      }
+    }
+  }
+  
+  &__progress {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+
+    .progress {
+      width: 260px;
+    }
+  }
+
+  &__winners {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@keyframes pulse {
+  100%,
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(5);
+  }
+}

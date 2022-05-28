@@ -1,0 +1,8 @@
+.modal-confirm {
+  &:deep(.modal-dialog) {
+    max-width: 400px;
+  }
+  &:deep(.btn) {
+    min-width: 100px;
+  }
+}

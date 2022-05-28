@@ -1,0 +1,10 @@
+.form {
+  width: 100%;
+
+  .btn {
+    width: 100%;
+  }
+  &:deep(.form-input) {
+    margin-top: 15px;
+  }
+}

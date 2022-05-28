@@ -1,0 +1,12 @@
+/* Required Bootstrap stylesheets */
+@import 'bootstrap/scss/functions';
+
+/* Custom variables stylesheets */
+@import './bootstrap-variables.scss';
+
+/* Required Bootstrap stylesheets */
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+
+@import 'node_modules/bootstrap/scss/utilities';
+@import 'node_modules/bootstrap/scss/utilities/api';

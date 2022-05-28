@@ -1,0 +1,16 @@
+.tabs {
+  &__nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &:deep(.tabs-content-item) {
+    padding-top: 15px;
+  }
+}

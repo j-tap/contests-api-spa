@@ -1,0 +1,17 @@
+.list-settings {
+  &__item {
+    &:hover,
+    &:focus {
+      .list-settings__actions {
+        opacity: 1;
+        height: auto;
+      }
+    }
+  }
+  &__actions {
+    transition: opacity 250ms ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}

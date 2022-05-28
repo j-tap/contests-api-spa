@@ -1,0 +1,9 @@
+.form-checkbox {
+  &:deep(.form-unit__field-wrap) {
+    display: inline-flex;
+    flex-direction: row-reverse;
+  }
+  .form-check-input {
+    margin-right: 10px;
+  }
+}
